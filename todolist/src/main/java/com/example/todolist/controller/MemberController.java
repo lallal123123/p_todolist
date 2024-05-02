@@ -4,12 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class ToDoController {
+@RequestMapping("/member")
+public class MemberController {
 
-	
-	@RequestMapping("/")
-	public String root() {
+	@RequestMapping("/loginForm")
+	public void loginForm() {
 		
-		return "index";
 	}
 }
